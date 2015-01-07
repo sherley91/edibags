@@ -28,6 +28,7 @@
 			margin: 0;
 			padding: 0;
 			z-index: 3;
+			/*opacity: .95;*/
 		}
 
 		.header {
@@ -69,7 +70,7 @@
 
 			/*transition: color 0.5s linear;*/
 		}
-		.navcontainer ul li a:hover{
+		.nav-container ul li a:hover{
 			color: #BBD656;
 		}
 
@@ -142,22 +143,23 @@
 			/*font-style: italic;*/
 		} 
 
-		.f1-container {
+		.nutrition-container {
 			background-color: #FFF;
 			width: 100%;
 			height: 500px;
 		}
 
-		.f1 {
+		.nutrition {
 			display: table;
-			max-width: 1000px;
+			max-width: 1100px;
 			/*height: 500px;*/
 			/*width: 500px;*/
+			width: 100%;
 			height: 500px;
 			margin: 0 auto;
 		}
 
-		.f1 span{
+		.nutrition span{
 			/*width: 50%;*/
 			line-height: 1.8em;
 			display: table-cell;
@@ -165,9 +167,10 @@
 			height: auto;
 			font-size: 1.4em;
 			font-weight: 300;
+			padding-left: 2em;
 		}
 
-		.f1 span h1 {
+		.nutrition span h1 {
 			display: inline;
 			font-size: 1.3em;
 			text-decoration: none;
@@ -175,7 +178,7 @@
 			font-style: italic;
 		}
 
-		.f1-pic {
+		.nutrition-pic {
 			float: left;
 			background-image: url(https://farm9.staticflickr.com/8675/15601685984_9dc9d78e1d.jpg);
 			vertical-align: middle;
@@ -186,13 +189,13 @@
 			opacity: .80;
 		}
 
-		.f2-container {
+		.env-container {
 			background-color: #000;
 			width: 100%;
 			height: 500px;
 		}
 
-		.f2 {
+		.env {
 			display: table;
 			/*top: 50%;*/
 			max-width: 1100px;
@@ -200,7 +203,7 @@
 			margin: 0 auto;
 		}
 
-		.f2 span{
+		.env span{
 			display: table-cell;
 			vertical-align: middle;
 			height: auto;
@@ -209,7 +212,7 @@
 			color: #FFF;
 		}
 
-		.f2-pic {
+		.env-pic {
 			float:left;
 			background-image: url(https://farm8.staticflickr.com/7533/16224594435_d008231260.jpg);
 			background-position: center;
@@ -223,7 +226,7 @@
 			height: 500px;
 		}
 
-		.f2-bags {
+		.env-bags {
 			background-image: url(https://farm9.staticflickr.com/8601/16038162160_fb2369d013_c.jpg);
 			background-repeat: repeat-x;
 			/*background-size: cover;*/
@@ -266,8 +269,18 @@
 			</div>
 		</div>
 
-		<div class="f1-container"> 
-			<div class="f1">
+		<div class="env-container">
+			<div class="env">
+				<div class="env-pic"></div>
+				<span> <h1>Enough Plastic is discarded each year to circle the earth 4 times.</h1> Simple steps can be taken to reduce this. One easy idea: get rid of the plastic sandwich bags we use to carry our favorite finger foods and sandwiches with us.
+				</span>
+			</div>
+		</div>
+		<div class="env-bags"> </div>
+
+
+		<div class="nutrition-container"> 
+			<div class="nutrition">
 				<span>
 						There are currently 75 million school aged children within the United States.
 					<h1>
@@ -276,18 +289,9 @@
 						Edibags presents a new way to fill this gap in children's diets. 
 				</span>
 
-				<div class="f1-pic"></div>
+				<div class="nutrition-pic"></div>
 			</div>
 		</div>
-
-		<div class="f2-container">
-			<div class="f2">
-				<div class="f2-pic"></div>
-				<span> <h1>Enough Plastic is discarded each year to circle the earth 4 times.</h1> Simple steps can be taken to reduce this. One easy idea: get rid of the plastic sandwich bags we use to carry our favorite finger foods and sandwiches with us.
-				</span>
-			</div>
-		</div>
-		<div class="f2-bags"> </div>
 		
 
 	</body>

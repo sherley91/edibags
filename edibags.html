@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie|Open+Sans:300italic,400,600,700,800,300|Shadows+Into+Light+Two|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+		<link href='/dhf_quintas_diary_demo/DHF_Quintas_Diary.otf' rel='stylesheet' type='text/css'>
+	
+		<link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
+
+		<style>	
+		html{
+			margin: 0;
+			padding: 0;
+			font-family: 'Open Sans', sans-serif;
+			/*font-family: 'Roboto', sans-serif;*/
+
+		}	
+
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.header-container{
+			position: fixed;
+			background-color: #FFF; 
+			width: 100%;
+			height: 80px;
+			top: 0;
+			margin: 0;
+			padding: 0;
+			z-index: 3;
+		}
+
+		.header {
+			max-width: 1000px;
+			height: 70px;
+			margin: 0 auto;
+		}
+
+		.header-logo{
+			float: left;
+		}
+		
+		.header-logo a{
+			display: block;
+			width: 166px;
+			height: 70px;
+			background-image: url(https://farm8.staticflickr.com/7556/15954203350_5f03864725_o.jpg);
+			background-repeat: no-repeat;
+			background-position: left;
+
+		}
+
+		.nav-container {
+			float:right;
+			position: relative;
+			top: 20%;
+			/*margin-top: -1em;*/
+		}
+
+		.nav-container ul li {
+			display: inline;
+			padding: .2em 1em;
+		}
+
+		.nav-container ul li a{
+			color: #211E1E;
+			text-decoration: none;
+			font-weight: 600;
+
+			/*transition: color 0.5s linear;*/
+		}
+		.navcontainer ul li a:hover{
+			color: #BBD656;
+		}
+
+		.banner {
+			position: relative;
+			background-image: url(https://farm5.staticflickr.com/4136/4911238308_f9325ce590_b.jpg);
+			background-size: cover;
+			/*opacity: .95;*/
+			width: 100%;
+			height: 700px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.banner-overlay {
+			background-color: #B64926;
+			opacity: .65;
+			height: 100%;
+		}
+
+		/* modifies edibags text on banner */
+		.banner h1 div.edibags{
+			font-size: 2em;
+		}
+
+		@font-face {
+			font-family: 'DHF_Quintas_Diary';
+			src:	local('fonts/DHF_Quintas_Diary.otf'),
+						url('fonts/DHF_Quintas_Diary.otf')
+						format('opentype');
+		}
+
+		.edibags {
+			/*font-family: 'Shadows Into Light Two', cursive;*/
+			font-family: 'DHF_Quintas_Diary';
+			font-size: 1em;
+		}
+
+		.banner-text .edibags{
+			letter-spacing: 2px;
+		}
+
+		.banner h1{
+			position: absolute;
+			z-index: 2;
+			text-align: center;
+			/*left: 50%;*/
+			width: 100%;
+			top: 35%;
+			margin: 0;
+			margin-top: -0.5em;
+			color: #FFF;
+			font-size: 4em;
+			text-shadow: 1px 1px 2px #444;
+		}
+
+		.banner h1 div {
+			margin: 0 auto;
+			font-size: 0.32em;
+			font-weight: 400;
+			max-width: 500px;
+			text-align: center;
+		}
+
+		/* Not modifying font size or weight. Only affects padding.  ??? */
+		.banner-text {
+			padding-top: 20px;
+			font-size: 1em;
+			font-weight: 300;
+			/*font-style: italic;*/
+		} 
+
+		.f1-container {
+			background-color: #FFF;
+			width: 100%;
+			height: 500px;
+		}
+
+		.f1 {
+			display: table;
+			max-width: 1000px;
+			/*height: 500px;*/
+			/*width: 500px;*/
+			height: 500px;
+			margin: 0 auto;
+		}
+
+		.f1 span{
+			/*width: 50%;*/
+			display: table-cell;
+			vertical-align: middle;
+			height: auto;
+			font-size: 1.4em;
+			font-weight: 300;
+		}
+
+		.f1 span h1 {
+			display: inline;
+			font-size: 1.3em;
+			text-decoration: none;
+			font-weight: 300;
+			font-style: italic;
+		}
+
+		.f1-pic {
+			float: left;
+			background-image: url(https://farm9.staticflickr.com/8675/15601685984_9dc9d78e1d.jpg);
+			vertical-align: middle;
+			width: 500px;
+			height: 500px;
+			background-position: center;
+			background-repeat: no-repeat;
+			opacity: .80;
+		}
+
+		.f2-container {
+			background-color: #000;
+			width: 100%;
+			height: 700px;
+		}
+
+		.f2 {
+			display: table;
+			max-width: 1000px;
+			height: 500px;
+			margin: 0 auto;
+		}
+
+		.f2 span{
+			display: table-cell;
+			vertical-align: middle;
+			height: auto;
+			font-size: 1.4em;
+			font-weight: 300;
+			color: #FFF;
+		}
+
+/*		.f2-pic {
+			float: left;
+			background-image: url(https://farm8.staticflickr.com/7462/16036762548_77d24d4089_o.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 960px;
+			height: 540px;
+		}*/
+
+
+
+
+		</style>
+	</head>
+
+	<body>
+		<div class="header-container">
+			<div class="header"> 
+				<div class="header-logo" align="center">
+					<a href="edibags.html"> </a>
+				</div>
+				<div class="nav-container">
+					<ul>
+						<li> <a href="edibags.html"> ABOUT US </a> </li>
+						<li> <a href="edibags.html"> CONTACT </a> </li>
+						<li> <a href="edibags.html"> FAQ </a> </li>
+					</ul>
+				</div>
+			</div> 
+		</div>
+
+		<div class="banner">
+			<h1>
+				<div class="edibags"> EdiBags </div>
+				<div> 
+					40% of great tasting fruits and vegetables are wasted and thrown away because of cosmetic imperfections 
+				</div>
+				<div class="banner-text">
+					<span class="edibags"> EdiBags</span> reduces both food and plastic waste by forming an edible sandwich bag from cosmetically damaged produce that are otherwise thrown away. 
+				</div>
+			</h1>
+			<div class="banner-overlay">
+			</div>
+		</div>
+
+		<div class="f1-container"> 
+			<div class="f1">
+				<span>
+						There are currently 75 million school aged children within the United States.
+					<h1>
+						80% of them do not receive their daily recommended amount of fruits and vegetables.
+					</h1>
+						Edibags presents a new way to fill this gap in children's diets. 
+				</span>
+
+				<div class="f1-pic"></div>
+			</div>
+		</div>
+
+		<div class="f2-container">
+			<div class"f2">
+				<span> <h1>Enough Plastic is discarded each year to circle the earth 4 times.<h1> Simple steps can be taken to reduce this. One easy idea: get rid of the plastic sandwich bags we use to carry our favorite finger foods and sandwiches with us.
+				</span>
+
+				<div class="f2-pic"></div>
+			</div>
+		</div>
+		
+
+	</body>
+</html>

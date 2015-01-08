@@ -21,7 +21,7 @@
 		}
 		.header-container{
 			position: fixed;
-			background-color: #FFF; 
+			background-color: #762F18; 
 			width: 100%;
 			height: 80px;
 			top: 0;
@@ -38,6 +38,7 @@
 		}
 
 		.header-logo{
+			display: inline-block;
 			margin-top: .6em;
 			float: left;
 		}
@@ -46,10 +47,9 @@
 			display: inline-block;
 			width: 140px;
 			height: 57px;
-			background-image: url(https://farm9.staticflickr.com/8645/16200269726_1cf79f23c9_o.jpg);
+			background-image: url(pics/edibagsHQ.png);
 			background-repeat: no-repeat;
 			background-position: left;
-
 		}
 
 		.nav-container {
@@ -65,10 +65,10 @@
 		}
 
 		.nav-container ul li a{
-			color: #434343;
+			color: #FFF;
 			text-decoration: none;
 			font-weight: 700;
-			text-shadow: .4px .3px #E7E6E6;
+			/*text-shadow: .4px .3px #E7E6E6;*/
 
 			/*transition: color 0.5s linear;*/
 		}
@@ -309,9 +309,9 @@
 		}*/
 
 		.footer-container{
-			background-color: #BBD656; 
+			background-color: #000; 
 			width: 100%;
-			height: 80px;
+			height: 50px;
 			bottom: 0;
 			margin: 0;
 			padding: 0;
@@ -321,35 +321,57 @@
 
 		.footer {
 			max-width: 1000px;
-			height: 70px;
+			height: 50px;
 			margin: 0 auto;
 		}
 
-		.footer-nav {
+		.footer-logo{
+			display: inline-block;
+			margin-top: .1em;
+			float: left;
+		}
+
+		.footer-logo a{
+			display: inline-block;
+			width: 100px;
+			height: 41px;
+			background-image: url(pics/edibagsHQ100x41.png);
+			background-repeat: no-repeat;
+			background-position: left;
+		}
+
+		.footer span{
+			display: inline-block;
+			color: #FFF;
+			float: right;
+			padding-top: 15px;
+		}
+
+/*		.footer-nav {
 			float: left;
 			width: 704px;
 			height: 65px;
 			padding-top: 15px;
-			text-align: center;
+			text-align: center;*/
 			/*margin-top: -1em;*/
-		}
+		/*}*/
 
-		.footer-nav ul li {
+/*		.footer-nav ul li {
 			display: inline;
 			padding: .2em 1em;
-		}
+		}*/
 
-		.footer-nav ul li a{
-			color: #434343;
+/*		.footer-nav ul li a{
+			color: #FFF;
 			text-decoration: none;
-			font-weight: 700;
-			text-shadow: .4px .3px #E7E6E6;
-
+			font-weight: 700;*/
+/*			text-shadow: .4px .3px #E7E6E6;
+*/
 			/*transition: color 0.5s linear;*/
-		}
+/*		}
 		.footer-nav ul li a:hover{
-			color: #000;
-		}
+			color: #BBD656;
+		}*/
 
 
 
@@ -425,16 +447,10 @@
 
 		<div class="footer-container">
 			<div class="footer"> 
-				<div class="header-logo" align="center">
+				<div class="footer-logo"> 
 					<a href="edibags.html"> </a>
 				</div>
-				<div class="footer-nav">
-					<ul>
-						<li> <a href="edibags.html"> ABOUT US </a> </li>
-						<li> <a href="edibags.html"> CONTACT </a> </li>
-						<li> <a href="edibags.html"> FAQ </a> </li>
-					</ul>
-				</div>
+				<span> Copyright 2015 Edibags - All rights reserved</span>
 			</div> 
 		</div>
 

@@ -169,6 +169,7 @@
 			font-size: 1.4em;
 			font-weight: 300;
 			padding-left: 1em;
+			padding: 50px;
 		}
 
 		.nutrition span h1 {
@@ -180,15 +181,24 @@
 			font-style: italic;
 		}
 
-		.nutrition-img {
-			float: left;
-			background-image: url(https://farm9.staticflickr.com/8675/15601685984_9dc9d78e1d.jpg);
+		.nutrition-img1 {
+			display: table-cell;
+			background-image: url(https://farm8.staticflickr.com/7483/16239287696_cb55aebd69_o.gif);
 			vertical-align: middle;
-			width: 500px;
-			height: 500px;
+			width: 125px;
+			height: 129px;
 			background-position: center;
 			background-repeat: no-repeat;
-			opacity: .80;
+		}
+
+		.nutrition-img2{
+			display: table-cell;
+			background-image: url(https://farm8.staticflickr.com/7484/15642833874_956ea58fa2_o.gif);
+			vertical-align: middle;
+			width: 108px;
+			height: 119px;
+			background-position: center;
+			background-repeat: no-repeat;
 		}
 
 		.env-container {
@@ -384,33 +394,43 @@
 		}
 
 		.test {
-			display: table;
-			height: 500px;
-			max-width: 1100px;
-		}
-
-		.test-image {
-			background-image: url(https://farm8.staticflickr.com/7505/16214731366_206bdea416_c.jpg);
-			float: right;
-			background-repeat: no-repeat;
-			background-position: center;
-			top: 50%;
-			vertical-align: middle;
-			/*margin-right:1.4em;*/
-			margin-left: 100px;
-			width: 500px;
-			height: 500px;
-		}
-
-		.test span {
-			display: table-cell;
-			color: #000;
-			font-size: 1.3em;
-			vertical-align: middle;
-			padding: 50px;
 			position: relative;
-			line-height: 1.5em;
+			display: block;
+			background-image: url(https://farm8.staticflickr.com/7461/16078733919_53668672ee_m.jpg);
+			vertical-align: middle;
+			background-repeat: repeat;
+			width: 100%;
+			height: 500px;
 		}
+
+		.test-overlay {
+			position: absolute;
+			background-color: #FFF;
+			z-index: 1;
+			opacity: .65;
+			height: 500px;
+			width:100%;
+		}
+
+		.test span{
+			background-color: #FFF;
+			display: block;
+			position: absolute;
+			z-index: 3;
+			text-align: center;
+			line-height: 2em;
+			max-width: 1000px;
+			color: #000;
+			font-size: 1.4em;
+			/*text-shadow: 1px 1px 2px #444;*/
+			top: 0;
+    	bottom: 0;
+    	left: 0;
+    	right: 0;
+    	height: 30%;
+    	margin: auto;
+    	padding:20px;
+			}
 
 		.test span h1{
 			display: inline;
@@ -460,6 +480,7 @@
 
 		<div class="nutrition-container"> 
 			<div class="nutrition">
+				<div class="nutrition-img1"></div>
 				<span>
 						There are currently 75 million school aged children within the United States.
 					<h1>
@@ -468,9 +489,23 @@
 						Edibags presents a new way to fill this gap in children's diets. 
 				</span>
 
-				<div class="nutrition-img"></div>
+				<div class="nutrition-img2"></div>
 			</div>
 		</div>
+
+<!-- 		<div class="test-wrapper">
+			<div class="test">
+				<div class="test-overlay"></div>
+					<span>
+						There are currently 75 million school aged children within the United States.
+					
+						80% of them do not receive their daily recommended amount of fruits and vegetables.
+				
+						Edibags presents a new way to fill this gap in children's diets. 
+				</span>
+			</div>	
+		</div> -->
+
 
 		<div class="env-container">
 			<div class="env">
@@ -497,11 +532,12 @@
 
 		<div class="footer-container">
 			<div class="footer"> 
-				<div class="footer-logo"> 
+				<!-- <div class="footer-logo"> 
 					<a href="home.html"> </a>
-				</div>
+				</div> -->
 				<span> Copyright 2015 Edibags - All rights reserved</span>
 			</div> 
 		</div>
+
 	</body>
 </html>

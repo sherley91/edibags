@@ -6,6 +6,50 @@
 	
 		<link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<style>
+
+		html{
+			color: #FFF;
+		}
+
+		.partners-wrapper{
+			width: 100%;
+			margin-top:50px;
+		}
+
+		.partners{
+			display: table;
+			width: 100%;
+		}
+
+		.partners span{
+			display: table-cell;
+			max-width: 1000px;
+			color: #000;
+			font-size: 1.3em;
+		}
+
+		.partners h1{
+			font-size: 1.5em;
+		}
+
+
+		.form-wrapper{
+			display: block;
+			width: 100%;
+		}
+
+		.form{
+			display: block;
+			max-width: 1000px;
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 50px;
+		}
+
+		</style>
 	</head>
 
 	<body>
@@ -24,12 +68,39 @@
 			</div> 
 		</div>
 
-		<div class="banner-wrapper">
-			<div class="banner">
-				<span> Contact </span>
+<!-- 		<div class="partners-wrapper">
+			<div class="partners">
+				<span><h1>Partners</h1>We're looking for partners!</span>
 			</div>
-			<div class="banner-overlay"></div>
+		</div> -->
+
+
+
+		<!-- <div class="form-wrapper"> -->
+		<div class="form">
+			<div id="wufoo-z32bhkm024zqre">
+				Fill out my <a href="https://edibags.wufoo.com/forms/z32bhkm024zqre">online form</a>.
+				</div>
+				<!-- <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Use <a href="http://www.wufoo.com/gallery/templates/">Wufoo templates</a> to make your own HTML forms.</div> -->
+				<script type="text/javascript">var z32bhkm024zqre;(function(d, t) {
+				var s = d.createElement(t), options = {
+				'userName':'edibags',
+				'formHash':'z32bhkm024zqre',
+				'autoResize':true,
+				'height':'573',
+				'async':true,
+				'host':'wufoo.com',
+				'header':'show',
+				'ssl':true};
+				s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+				s.onload = s.onreadystatechange = function() {
+				var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+				try { z32bhkm024zqre = new WufooForm();z32bhkm024zqre.initialize(options);z32bhkm024zqre.display(); } catch (e) {}};
+				var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+				})(document, 'script');</script>
 		</div>
+		<!-- </div> -->
+
 		
 	</body>
 </html>

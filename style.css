@@ -9,6 +9,13 @@
 			margin: 0;
 			padding: 0;
 		}
+
+		@font-face {
+			font-family: 'DHF_Quintas_Diary';
+			src:	local('fonts/DHF_Quintas_Diary.otf'),
+						url('fonts/DHF_Quintas_Diary.otf')
+						format('opentype');
+		}
 		
 		.header-container{
 			position: fixed;
@@ -69,34 +76,33 @@
 			color: #BBD656;
 		}
 
-		.banner {
+		.banner-wrapper {
+			width: 100%;
 			position: relative;
+		}
+
+		.banner {
+			display: block;
+			/*position: relative;*/
 			/* photo credit to Lars P. on flickr https://www.flickr.com/photos/lars_p/ */
 			background-image: url(https://farm5.staticflickr.com/4136/4911238308_f9325ce590_b.jpg);
 			background-size: cover;
 			background-position: center;
 			width: 100%;
 			height: 200px;
-			margin-top: 0;
+			margin-top: 50px;
 			margin-bottom: 0;
+			/*z-index: 1;*/
 		}
 
 		.banner-overlay {
+			position: absolute;
 			background-color: #B64926;
 			opacity: .65;
-			height: 100%;
-		}
-
-		/* modifies edibags text on banner */
-		.banner h1 div.edibags{
-			font-size: 2em;
-		}
-
-		@font-face {
-			font-family: 'DHF_Quintas_Diary';
-			src:	local('fonts/DHF_Quintas_Diary.otf'),
-						url('fonts/DHF_Quintas_Diary.otf')
-						format('opentype');
+			height: 200px;
+			width:100%;
+			top:0;
+			/*margin: 0;*/
 		}
 
 		.edibags {
@@ -105,38 +111,26 @@
 			font-size: 1.5em;
 		}
 
-		.banner-text .edibags{
-			letter-spacing: 2px;
-		}
+/*		.banner span {
+			display: block;
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 1.3em;
+			padding: 80px;
+			color: #FFF;
+		}*/
 
-		.banner h1{
+		.banner span{
+			display: block;
 			position: absolute;
 			z-index: 2;
 			text-align: center;
-			vertical-align: middle;
-			left: 40%;
-			/*margin-left: -0.5em;*/
-			max-width: 1000px;
-			top: 60%;
-			/*margin: 0;*/
-			margin-top: -0.5em;
+			line-height: 200px;
+			width: 100%;
+			height: 200px;
 			color: #FFF;
-			font-size: 4em;
+			font-size: 3.8em;
 			text-shadow: 1px 1px 2px #444;
 		}
 
-		.banner h1 div {
-			margin: 0 auto;
-			font-size: 0.32em;
-			font-weight: 400;
-			max-width: 600px;
-			text-align: center;
-		}
-
-		/* Not modifying font size or weight. Only affects padding.  ??? */
-		.banner-text {
-			padding-top: 20px;
-			font-size: 1em;
-			font-weight: 300;
-			/*font-style: italic;*/
-		} 

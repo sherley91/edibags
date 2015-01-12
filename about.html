@@ -13,37 +13,68 @@
 		/*background-image: url(https://farm9.staticflickr.com/8565/16265479662_18ecac1d71_n.jpg);*/
 	}
 
-		.about-wrapper {
+		.intro-wrapper{
 			width: 100%;
+			/*padding-top:50px;*/
+			/*background-color: #58B2CE;*/
+		}
+
+		.intro{
+			display: table;
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			/*padding: 50px;*/
+		}
+
+		.intro span{
+			display: table-cell;
+			max-width: 1000px;
+			font-weight: 600;
+			font-size: 1em; 
+			padding: 50px;
+
+		}
+
+		.prob-wrapper {
+			width: 100%;
+			/*background-color: #58B2CE;*/
 			/*background-image: url(https://farm9.staticflickr.com/8648/16078794517_6fb562c9ed_t.jpg);*/
 		}
 
-		.about{
-			display: block;
+		.problem{
+			display: table;
 			max-width: 1000px;
 			margin-left: auto;
 			margin-right: auto;
 			/*margin-top: 50px;*/
 			background-color: #FFF;
-			padding: 50px;
+			/*padding: 50px;*/
 		}
 
-		.about p{
+		.problem-span {
+			display: table-cell;
+			max-width: 1000px;
+		}
+
+		.problem p{
 			display: inline-block;
-			font-size: 1em;
-			
+			font-size: 1em;			
 		}
 
-		.about h1{
+		.problem h1{
 			display: inline-block;
 			font-weight: 600;
 			font-size: 1em;
-			/*text-align: center;*/
-			/*padding-left: 30px;
-			padding-right: 30px;*/
 		}
 
-		.about-img {
+		.problem h2{
+			display: inline-block;
+			font-weight: 600;
+			font-size: 1.5em;
+		}
+
+		.problem-img {
 			background-image: url(https://farm9.staticflickr.com/8563/15644865923_63cb521ec2_o.gif);
 			background-repeat: repeat-x;
 			/*background-size: cover;*/
@@ -51,6 +82,48 @@
 			height: 105px;
 			margin-bottom:0;
 		}
+
+		.nature-wrapper {
+			width: 100%;
+			/*display: table;*/
+			/*background-image: url(https://farm9.staticflickr.com/8648/16078794517_6fb562c9ed_t.jpg);*/
+		}
+
+		.nature{
+			display: table;
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			/*margin-top: 50px;*/
+			background-color: #FFF;
+			/*padding: 50px;*/
+		}
+
+		.nature-span {
+			display: table-cell;
+			max-width: 1000px;
+			padding: 50px;
+		}
+
+		.nature p{
+			display: inline-block;
+			font-size: 1em;
+			
+		}
+
+		.nature h1{
+			display: inline-block;
+			font-weight: 600;
+			font-size: 1em;
+		}
+
+		.nature h2{
+			display: inline-block;
+			font-weight: 600;
+			font-size: 1.5em;
+		}
+
+
 
 		.team-wrapper{
 			width: 100%;
@@ -86,34 +159,47 @@
 			</div> 
 		</div>
 
-
-		<div class="title-wrapper">
-			<div class="title">
-			<span>About Us</span>
-			</div>
-		</div>
-
-<!-- 		<div class="banner-wrapper">
+		<div class="banner-wrapper">
 			<div class="banner">
 				<span> About Us </span>
 			</div>
 			<div class="banner-overlay"></div>
-		</div> -->
-		
+		</div>
 
-		<div class="about-wrapper">
-			<div class="about">
-				<h1>
-					EdiBags is an Austin-based social enterprise with two goals: 
-					reduce plastic waste and make use of surplus produce before it's thrown out. 
-				</h1>
+		<div class="intro-wrapper">
+			<div class="intro">
+				<span>
+					EdiBags is an Austin-based social enterprise with two goals: reduce plastic waste and make use of surplus produce before it's thrown out. 
+				</span>
+			</div>
+		</div>
+
+
+		<div class="problem-wrapper">
+			<div class="problem">
+			<span>
+				<h2>
+				The Problem
+				</h2>
 
 				<p>
 					We live in a world where we produce so much more than we actually consume. Unfortunately, we are taught that only the best looking fruits and vegetables are worthy of our consumption. This creates an unfortunate pattern: cosmetically damaged produce goes untouched and then rots before it's put to any use only to be thrown away. 
 				</p>
 
 				<p>
-					We also live in a world where disposables have become second nature for many of us with busy lifestyles. Many cities throughout the world have made the move to rid themselves of plastic and make the switch to biodegradable. Unfortunately, biodegradable materials can be just as harmful as the plastics they replace when they are not properly disposed of. 
+					We also live in a world where disposables have become second nature for many of us with busy lifestyles. Many cities throughout the world have made the move to rid themselves of plastic and make the switch to biodegradable. Unfortunately, biodegradable materials can be just as harmful as the plastics they replace when they are not properly disposed of.
+				</p>
+				</span>
+		</div>
+
+		<div class="nature-wrapper">
+			<div class="nature">
+				<span>
+				<h2>
+				Nature's Wrapper
+				</h2>
+
+				<p>
 					Much can be learned from the natural world, from the skins used to protect the fruits and vegetables our species learned to cultivate throughout our evolution. We can imitate this in our own packaging; we can create a skin that can be simply consumed, just as we have been doing for hundreds of thousands of years. 
 				</p>
 
@@ -124,15 +210,16 @@
 				<p>
 					We believe in a world where waste does not exist and every resource is utilized to its maximum potential; a world where we do not need to see plastic become a part of the diets of other animals as well as of our own.  Our company is just the start; the rest is up to you.
 				</p>
+				</span>
 			</div>
 		</div>
 
 
-<!-- 		<div class="footer-container">
+		<div class="footer-container">
 			<div class="footer"> 
 				<span> Copyright 2015 Edibags - All rights reserved</span>
 			</div> 
-		</div> -->
+		</div>
 		
 	</body>
 </html>

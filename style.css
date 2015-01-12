@@ -1,0 +1,142 @@
+		html{
+			margin: 0;
+			padding: 0;
+			font-family: 'Open Sans', sans-serif;
+			/*font-family: 'Roboto', sans-serif;*/
+		}	
+
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.header-container{
+			position: fixed;
+			background-color: #FFF; 
+			width: 100%;
+			height: 50px;
+			top: 0;
+			margin: 0;
+			padding: 0;
+			z-index: 3;
+			border-bottom: 2px solid #D1D1D1;
+			/*box-shadow: 0px 1px 4px #000;*/
+			/*opacity: .95;*/
+		}
+
+		.header {
+			max-width: 1000px;
+			height: 50px;
+			margin: 0 auto;
+		}
+
+		.header-logo{
+			display: inline-block;
+			margin-top: .2em;
+			float: left;
+		}
+		
+		.header-logo a{
+			display: inline-block;
+			width: 100px;
+			height: 41px;
+			background-image: url(https://farm9.staticflickr.com/8645/16200269726_aa0858116e_t.jpg);
+			background-repeat: no-repeat;
+			background-position: left;
+		}
+
+		.nav-container {
+			float:right;
+			position: relative;
+			top: 3%;
+			/*margin-top: -1em;*/
+		}
+
+		.nav-container ul li {
+			display: inline;
+			padding: .2em 1em;
+		}
+
+		.nav-container ul li a{
+			color: #000;
+			text-decoration: none;
+			font-weight: 700;
+			text-shadow: .4px .3px #E7E6E6;
+
+			/*transition: color 0.5s linear;*/
+		}
+		.nav-container ul li a:hover{
+			color: #BBD656;
+		}
+
+		.banner {
+			position: relative;
+			/* photo credit to Lars P. on flickr https://www.flickr.com/photos/lars_p/ */
+			background-image: url(https://farm5.staticflickr.com/4136/4911238308_f9325ce590_b.jpg);
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 200px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.banner-overlay {
+			background-color: #B64926;
+			opacity: .65;
+			height: 100%;
+		}
+
+		/* modifies edibags text on banner */
+		.banner h1 div.edibags{
+			font-size: 2em;
+		}
+
+		@font-face {
+			font-family: 'DHF_Quintas_Diary';
+			src:	local('fonts/DHF_Quintas_Diary.otf'),
+						url('fonts/DHF_Quintas_Diary.otf')
+						format('opentype');
+		}
+
+		.edibags {
+			/*font-family: 'Shadows Into Light Two', cursive;*/
+			font-family: 'DHF_Quintas_Diary';
+			font-size: 1.5em;
+		}
+
+		.banner-text .edibags{
+			letter-spacing: 2px;
+		}
+
+		.banner h1{
+			position: absolute;
+			z-index: 2;
+			text-align: center;
+			vertical-align: middle;
+			left: 40%;
+			/*margin-left: -0.5em;*/
+			max-width: 1000px;
+			top: 60%;
+			/*margin: 0;*/
+			margin-top: -0.5em;
+			color: #FFF;
+			font-size: 4em;
+			text-shadow: 1px 1px 2px #444;
+		}
+
+		.banner h1 div {
+			margin: 0 auto;
+			font-size: 0.32em;
+			font-weight: 400;
+			max-width: 600px;
+			text-align: center;
+		}
+
+		/* Not modifying font size or weight. Only affects padding.  ??? */
+		.banner-text {
+			padding-top: 20px;
+			font-size: 1em;
+			font-weight: 300;
+			/*font-style: italic;*/
+		} 
